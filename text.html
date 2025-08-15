@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>palak personal porfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="js/bootstrap.bundle.js">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Palak Yadav</div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Palak yadav</span></h1>
+        <h2>B.Tech Student – CSE (AIML)</h2>
+        <p>Passionate about problem-solving and building meaningful tech solutions. Always
+          learning,experimenting and growing through code.</br>
+          I am a </p>
+        <span id="element"></span>
+        <div class="hero-buttons">
+          <a href="file:///C:/Users/hp/Downloads/resume%20(1).pdf" class="btn" download>Download Resume</a>
+          <a href="#Contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="image/palak.jpg" alt="Profile Image" />
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer', 'Tech-Oriented Problem Solver', 'Future-Ready Software Engineer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <div id="about">
+    <h1 id="about-heading">About me</h1>
+    <div class="col-sm-10 mx-auto my-auto">
+      <p id="para">I’m Palak Yadav, a final-year B.Tech student in Computer Science – AIML at Axis Institute of
+        Technology and Management. My core expertise lies in Python, Django, HTML, CSS, JavaScript, and database
+        management, with a growing interest in AI-powered applications and modern web technologies.
+      <p id="para">Over my academic journey, I have worked on impactful projects such as Smart Build Hub, an
+        AI-driven construction management platform, and completed live project training at SOFTPRO India. These
+        experiences have strengthened my problem-solving skills and ability to work in real-world environments.
+      </p>
+      <p id="para">My goal is to become a skilled software engineer, creating innovative, scalable, and
+        user-focused solutions while constantly learning and adapting to emerging technologies.</p>
+    </div>
+  </div>
+
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Project Card 1 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="image/sbh.png" alt="Project 1">
+            <div class="project-content">
+              <h3>Smart Build Hub</h3>
+              <p>A digital platform that streamlines home construction by centralizing data, and automating workflow for
+                more efficiency.</p>
+              <p class="tech-used"><strong>Technologies:</strong> HTML, CSS, JavaScript, Django, SQLite</p>
+               <a href="https://github.com/yourusername/SmartBuildHub" class="btn secondary" target="_blank" style="margin-right: 60px;">
+                View Code
+              </a>
+
+              <a href="https://yourusername.github.io/SmartBuildHub" class="btn" target="_blank" >
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat for other projects -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="image/aboutme.png" alt="Project 2">
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>A responsive website showcasing skills, projects, and achievements with smooth animations and an
+                elegant layout.</p>
+              <p class="tech-used"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+               <a href="https://github.com/yourusername/SmartBuildHub" class="btn secondary" target="_blank" style="margin-right: 60px;margin-top: 15px;">
+                View Code
+              </a>
+
+              <a href="https://yourusername.github.io/SmartBuildHub" class="btn" target="_blank" style="margin-top: 15px;">
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="image/weather.png" alt="Project 3">
+            <div class="project-content">
+              <h3>Weather App</h3>
+              <p>A real-time weather tool that uses APIs to display temperature, humidity, and conditions with a clean,
+                user-friendly interface.</p>
+              <p class="tech-used"><strong>Technologies:</strong> HTML, CSS, JavaScript, API</p>
+               <a href="https://github.com/yourusername/SmartBuildHub" class="btn secondary" target="_blank" style="margin-right: 60px;margin-top: 15px;">
+                View Code
+              </a>
+
+              <a href="https://yourusername.github.io/SmartBuildHub" class="btn" target="_blank" style="margin-top: 15px;">
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="image/smartmirror.png" alt="Project 4">
+            <div class="project-content">
+              <h3>Smart Mirror</h3>
+              <p>An interactive mirror that displays live weather, time, news, and jokes through API integration on a
+                minimal interface.</p>
+              <p class="tech-used"><strong>Technologies:</strong> Python, Tkinter, APIs</p>
+              <a href="https://github.com/yourusername/SmartBuildHub" class="btn secondary" target="_blank" style="margin-right: 60px;margin-top: 15px;">
+                View Code
+              </a>
+
+              <a href="https://yourusername.github.io/SmartBuildHub" class="btn" target="_blank" style="margin-top: 15px;">
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="image/music.png" alt="Project 5">
+            <div class="project-content">
+              <h3>Music Player</h3>
+              <p> A web-based player with play, pause, skip, and playlist features in a sleek, responsive design.</p>
+              <p class="tech-used"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+               <a href="https://github.com/Palakyadav12/music-player" class="btn secondary" target="_blank" style="margin-right: 60px;margin-top: 30px;">
+                View Code
+              </a>
+
+              <a href="https://yourusername.github.io/SmartBuildHub" class="btn" target="_blank" style="margin-top: 30px;">
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section py-5 text-center">
+    <!-- Heading -->
+    <h2 class="skills-heading">My Skills</h2>
+
+    <!-- Skills Grid -->
+    <div class="row g-5 justify-content-center">
+      <!-- Skill -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-left">
+            <img src="image/html.png" alt="HTML">
+          </div>
+          <h5 class="mt-3">HTML5</h5>
+          <p>Markup language for creating structured and semantic web pages.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-left">
+            <img src="image/css.png" alt="CSS">
+          </div>
+          <h5 class="mt-3">CSS3</h5>
+          <p>Styling language for designing visually appealing and responsive layouts.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-left">
+            <img src="image/js.png" alt="JavaScript">
+          </div>
+          <h5 class="mt-3">JavaScript</h5>
+          <p>Scripting language that enables interactive and dynamic website features.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-left">
+            <img src="image/python.png" alt="Python">
+          </div>
+          <h5 class="mt-3">Python</h5>
+          <p>Versatile programming language for backend, automation, and data projects.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-right">
+            <img src="image/c++.png" alt="JavaScript">
+          </div>
+          <h5 class="mt-3">c++</h5>
+          <p>High-performance language for system, app, and game development.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-right">
+            <img src="image/nodejs.png" alt="JavaScript">
+          </div>
+          <h5 class="mt-3">Node JS</h5>
+          <p>JavaScript runtime for fast, scalable backend apps</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-right">
+            <img src="image/react.png" alt="JavaScript">
+          </div>
+          <h5 class="mt-3">React</h5>
+          <p>Library for building dynamic, component-based UIs</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="skill-item">
+          <div class="skill-icon slide-right">
+            <img src="image/sql.png" alt="JavaScript">
+          </div>
+          <h5 class="mt-3">SQL</h5>
+          <p>Language for managing and querying databases</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JS for Scroll Animation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const skills = document.querySelectorAll(".skill-icon");
+
+      function showSkills() {
+        skills.forEach(skill => {
+          const rect = skill.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 50) {
+            skill.classList.add("show");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", showSkills);
+      showSkills();
+    });
+  </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const rows = document.querySelectorAll(".logo-row");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // animation only once
+          }
+        });
+      }, { threshold: 0.3 });
+
+      rows.forEach((row) => observer.observe(row));
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,  // Show 3 at a time
+      spaceBetween: 20,
+      loop: true,        // Loop infinitely
+      autoplay: {
+        delay: 2000,   // Slide every 2 seconds
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: { slidesPerView: 3 }, // Tablet
+        480: { slidesPerView: 1 }  // Mobile
+      }
+    });
+  </script>
+
+
+  <footer class="portfolio-footer" id="Contact">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Palak Yadav</h3>
+        <p>Passionate developer creating modern and responsive web applications.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:palak@example.com">palak@example.com</a></p>
+        <p>Phone: +91 9876543210</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/palak-yadav8/"><img src="image/linkedin.png"
+              alt="LinkedIn">LinkedIn</a></br>
+          <a href="https://github.com/Palakyadav12"><img src="image/github.png"
+              style="width:30px;height: 30px;margin-top: 10px;" alt="GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Palak Yadav. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
